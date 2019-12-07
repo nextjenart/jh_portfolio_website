@@ -2,31 +2,35 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>About Jennifer Howard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jennifer Howard UX Designer</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://www.nextjenart.com/assets/images/favicon.ico">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a659e7dc9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="js-focus-visible">
 <!-- Content Area -->
 <!-- header -->
-			<div class="container">
-	            <!-- logo -->
-				<div class="oi_logo_place">
+<div class="topnav">
+                <!-- logo -->
+                <div class="logo">
             <img src="img/JH-logo.png" alt="Jen Howard">
-				</div>
-   	            <!-- logo -->
-</div>
+                </div>
+                <!-- logo -->
+
 <!-- header -->
-<nav style="padding-top: 10px; padding-bottom: 10px;">
+<nav class="topnav-right">
   <a href="index.html">Work</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
+</div>
 <main>
-  <div>
-    <div style="padding-bottom: 10px;">
-      <div class="col-sm-12"><!--o pen first column (image) -->
+  <div id="about">
+    <div  class="col-sm-12">
+      <div><!--o pen first column (image) -->
             <img class="img-responsive" src="img/JH-main-sml.png" alt="view-with-a-jen">
       </div><!-- close first column -->
       <h1>Jen Howard</h1>
@@ -34,7 +38,7 @@
             <p>I'm a UX/UI designer that has taken the reigns of a complex, data-mapping application that lacked visual cohesion and interactive consistency and managed to unify our developers' opposing ideas on icons into a single, cohesive brand pattern. On top of that, I paved the way for A/B Testing, managed constant layout design changes, streamlined task flow, and pushed as many quality of life suggestions as possible.</p>
             <span></span>
             <p>I always push myself to design systems that have the users satisfaction in mind and I never settle for the status quo. I love the challenge of discovering exactly what a user needs and how to create an experience that gets them to their goals as efficiently as possible.</p>
-            <a href="files/Howard_Jennifer_Resume.pdf" target="_blank">My CV</a>
+            <a id="cv" href="files/Howard_Jennifer_Resume.pdf" target="_blank"><li class="fa fa-file-text fa-2x"></li>  My CV</a>
             <h2>Skills</h2>
             <p>UX Design / UI Design / Website Design / Illustration & Graphic Design</p>
             <h2>Tools</h2>
@@ -49,9 +53,11 @@
     <h2>Let's work together!</h2>
     <p>Connect with me through email or check out my LinkedIn to learn more about what I'm about.</p>
     <div>
-      <a href="mailto:jennifer.r.howard10@gmail.com?subject=Hello! Stumbled upon your portfolio site!&">Email!</a>
+      <a id="email" target="_blank" href="mailto:jennifer.r.howard10@gmail.com?subject=Hello! Stumbled upon your portfolio site!&">
+        <i class="fa fa-envelope fa-3x"></i>
+      </a>
       <span></span>
-      <p>You could also call or Skype me at: <a href="tel:123-456-7890">123-456-7890</a> or <a href="skype:nextjenart">nextjenart</a>
+      <p>You could also call or Skype me at: <a id="skype" href="tel:123-456-7890"><i class="fa fa-phone-square fa-2x"></i></a> or <a id="skype" href="skype:nextjenart"><i class="fa fa-comment fa-2x" aria-hidden="true"></i></a>
     </div>
   </div>
   <div>
@@ -64,6 +70,7 @@
   </div>
 </footer>
 
+<script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

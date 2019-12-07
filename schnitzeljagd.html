@@ -2,33 +2,35 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Schnitzeljagd</title>
     <link rel="shortcut icon" href="https://www.nextjenart.com/assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a659e7dc9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="js-focus-visible">
 <!-- Content Area -->
 <!-- header -->
-			<div class="container">
-	            <!-- logo -->
-				<div class="oi_logo_place">
+<div class="topnav">
+                <!-- logo -->
+                <div class="logo">
             <img src="img/JH-logo.png" alt="Jen Howard">
-				</div>
-   	            <!-- logo -->
-</div>
+                </div>
+                <!-- logo -->
+
 <!-- header -->
-<nav style="padding-top: 10px; padding-bottom: 10px;">
+<nav class="topnav-right">
   <a href="index.html">Work</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
+</div>
 <main>
-  <div>
-    <div style="padding-bottom: 10px;">
-      <div><!--o pen first column (image) -->
+<!--o pen first column (image) -->
       <!-- content -->
-<div>
+<div id="schnitzeljagd">
     <div>
         <div class="col-sm-12">
             <img class="img-responsive" src="img/Schnitzeljagd-title.png" alt="">
@@ -163,9 +165,11 @@
     <h2>Let's work together!</h2>
     <p>Connect with me through email or check out my LinkedIn to learn more about what I'm about.</p>
     <div>
-      <a href="mailto:jennifer.r.howard10@gmail.com?subject=Hello! Stumbled upon your portfolio site!&">Email!</a>
+      <a id="email" target="_blank" href="mailto:jennifer.r.howard10@gmail.com?subject=Hello! Stumbled upon your portfolio site!&">
+        <i class="fa fa-envelope fa-3x"></i>
+      </a>
       <span></span>
-      <p>You could also call or Skype me at: <a href="tel:123-456-7890">123-456-7890</a> or <a href="skype:nextjenart">nextjenart</a>
+      <p>You could also call or Skype me at: <a id="skype" href="tel:123-456-7890"><i class="fa fa-phone-square fa-2x"></i></a> or <a id="skype" href="skype:nextjenart"><i class="fa fa-comment fa-2x" aria-hidden="true"></i></a>
     </div>
   </div>
   <div>
@@ -178,6 +182,7 @@
   </div>
 </footer>
 
+<script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

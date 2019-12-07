@@ -2,77 +2,91 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jennifer Howard UX Designer</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://www.nextjenart.com/assets/images/favicon.ico">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a659e7dc9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="js-focus-visible">
 <!-- Content Area -->
 <!-- header -->
-			<div class="container">
+<div class="topnav">
 	            <!-- logo -->
-				<div class="oi_logo_place">
+				<div class="logo">
             <img src="img/JH-logo.png" alt="Jen Howard">
 				</div>
    	            <!-- logo -->
-</div>
+
 <!-- header -->
-<nav style="padding-top: 10px; padding-bottom: 10px;">
+<nav class="topnav-right">
   <a href="index.html">Work</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
+</div>
 <main>
-  <div> <!-- open hero section -->
+  <div id="hero"> <!-- open hero section -->
     <div>
       <div class="col-sm-12"><!--o pen first column (image) -->
             <img class="img-responsive" src="img/JH-main-sml.png" alt="view-with-a-jen">
-      </div><!-- close first column -->
+      </div ><!-- close first column -->
+      
+      <div class="col-sm-12">
       <h1>Jen Howard</h1>
-        <span>Making the world better through UX.</span>
+        <p class="quote">Making the world better through UX.</p>
             <p>I'm a UX/UI Designer on a mission.</p>
             <p>Creating an experience that a user can intuitively navigate through while clearly conveying the context in an informative, engaging manner is what I'm obsessed with.</p>
+      </div>
+      <div class="break">
+            <hr style="border: 1px solid #9A9A9A;"></hr>
+      </div>
     </div>
   </div><!-- close hero section -->
-<div><!-- open work section -->
+<div id="work" class="col-sm-12"><!-- open work section -->
   <div>
     <h2>My Work</h2>
-  <div><!-- open row for 2 columns -->
-<div class="col-sm-12"><!--o pen first column (image) -->
+  </div><!-- open row for 2 columns -->
       <a href="schnitzeljagd.html"><img class="img-responsive" src="img/Schnitzeljagd-title.png" alt="schnitzeljagd-title"></a>
-</div><!-- close first column -->
-    <div><!-- open second column -->
-      <h3>Schnitzeljagd</h3>
+    <!-- open second column -->
+        <h3>Schnitzeljagd</h3>
           <p>Level-up your knowledge of where you live and have a blast while doing it! Schnitzeljagd creates unique experiences by leading you and your friends on scavenger hunts to discover key locations sprinkled throughout the city you thought you knew.</p>
           <p>With Schnitzeljagd, you can find adventure anywhere!</p>
-          <a href="">Read More</a><!-- button -->
-      </div><!-- close second column-->
-    </div><!-- close row for 2 columns -->
- <div><!--open row for 2 columns-->
-    <div class="col-sm-12"><!--open first column (image)-->
-             <img class="img-responsive" src="img/hash-guide-title.png" alt="schnitzeljagd-title">
+          <p class="padding">
+            <a href="schnitzeljagd.html" class="btn">Learn more</a>
+          </p><!-- button -->
+          <div class="break">
+            <hr style="border: 1px solid #9A9A9A;"></hr>
+          </div>
+
+    <div><!--open first column (image)-->
+          <img class="img-responsive" src="img/hash-guide-title.png" alt="schnitzeljagd-title">
     </div><!-- close first column -->
     <div> <!--open second colomn (text) -->
         <h3>Hash Guide</h3>
         <p>Made by hashers for hashers! All the detrails you want to know in one convenient application. Never miss a hash when you've got the ultimate hash guide at your finger tips!</p>
         <p>ON ON!</p>
-        <a href="">Read More</a><!-- button -->
-     </div><!-- close second column -->
-  </div><!-- close row for 2 columns -->
-</div>
-</div><!-- close work section -->
+        <p class="padding">
+            <a href="schnitzeljagd.html" class="btn">Learn more</a>
+        </p><!-- button -->
+<!-- button -->
+    </div><!-- close second column -->
+  </div>
 </main>
 
-<footer id="contact" style="background-color: #E8E8EC; padding: 25px;">
+<footer id="contact" style="background-color: #E8EDED; padding: 25px;">
 <h1>Contact</h1>
   <div>
     <h2>Let's work together!</h2>
     <p>Connect with me through email or check out my LinkedIn to learn more about what I'm about.</p>
     <div>
-      <a href="mailto:jennifer.r.howard10@gmail.com?subject=Hello! Stumbled upon your portfolio site!&">Email!</a>
+      <a id="email" target="_blank" href="mailto:jennifer.r.howard10@gmail.com?subject=Hello! Stumbled upon your portfolio site!&">
+        <i class="fa fa-envelope fa-3x"></i>
+      </a>
       <span></span>
-      <p>You could also call or Skype me at: <a href="tel:123-456-7890">123-456-7890</a> or <a href="skype:nextjenart">nextjenart</a>
+      <p>You could also call or Skype me at: <a id="skype" href="tel:123-456-7890"><i class="fa fa-phone-square fa-2x"></i></a> or <a id="skype" href="skype:nextjenart"><i class="fa fa-comment fa-2x" aria-hidden="true"></i></a>
     </div>
   </div>
   <div>
@@ -85,6 +99,7 @@
   </div>
 </footer>
 
+<script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
