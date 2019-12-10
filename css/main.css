@@ -66,6 +66,10 @@ p {
 	padding-left: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
 	font-family: 'Muli', sans-serif;
 	margin: 0;
