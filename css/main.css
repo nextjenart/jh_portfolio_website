@@ -1,6 +1,5 @@
 /* This is my CSS main */
 
-
 .topnav {
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -16,14 +15,16 @@
 	margin-top: 20px;
 	text-decoration: none;
 	font-size: 14px;
+  transition: .3s;
 }
 
 .topnav a:hover {
-	color: #d3d3d3;
+	color: #000;
+  opacity: 0.3;
 }
 
 .topnav a:visited {
-	color: #d3d3d3;
+	color: #A9A9A9;
 }
 
 #schnitzeljagd-top {
@@ -38,8 +39,8 @@ main {
 }
 
 h1 {
-	font-size: 2.5em;
-	margin-block-start: 0.3em;
+	  font-size: 2.5em;
+	  margin-block-start: 0.3em;
     margin-block-end: 0.3em;
 }
 
@@ -63,7 +64,7 @@ p {
 
 .logo {
 	float: left;
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 * {
@@ -187,19 +188,17 @@ button {
 	clear: both;
 }
 
+.hero-text-indent {
+  width: 75vh;
+}
+
 .break {
 	margin-top: 35px;
 	margin-bottom: 35px;
-	align-items: stretch;
 }
 
 .mountain-break {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1CBBA3;
     padding-bottom: 45px;
-
 }
 
 /* animation */
@@ -561,7 +560,6 @@ path#f3-l9 {
           transform: rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px);
 }
 
-
 /* footer */
 
 #footer {
@@ -673,9 +671,11 @@ fieldset {
 	color:#888;
 }
 
-
 .blanket {
-	margin: 40px;
+	margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 /* Responsive Design */
@@ -692,7 +692,6 @@ fieldset {
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
 	}
-
 
 	.img-responsive-sml {
 		order: 2;
@@ -711,7 +710,6 @@ fieldset {
 	}
 }
 
-
 @media (min-width: 767px) and (max-width: 980px) {
 	.col-md-6 { width:100%; }
 	.oi_sidebar { display:none; }
@@ -726,7 +724,6 @@ fieldset {
   		margin-left: auto;
   		margin-right: auto;
 	}
-
 }
 
 .img-responsive,
