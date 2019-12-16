@@ -129,6 +129,12 @@ button {
 	cursor: pointer;
 }
 
+.contact-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
 .btn {
 	background-color: #1CBBA3;
 	text-align: center;
@@ -586,9 +592,9 @@ path#f3-l9 {
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
+	background: #F9F9F9;
+	padding: 25px;
+	margin: 50px 0;
 }
 
 #contact h3 {
@@ -599,9 +605,9 @@ path#f3-l9 {
 }
 
 #contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
 }
 
 fieldset {
@@ -613,35 +619,35 @@ fieldset {
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:95%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
+	width: 95%;
+	border: 1px solid #CCC;
+	background: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
+	border: 1px solid #AAA;
 }
 
 #contact textarea {
-	height:100px;
-	max-width:100%;
-    resize:none;
+	height: 100px;
+	max-width: 100%;
+  resize: none;
 }
 
 #contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#F97D14;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
+	cursor: pointer;
+	width: 95%;
+	border: none;
+	background: #F97D14;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
 	border-radius: 4px;
 }
 
@@ -708,6 +714,8 @@ fieldset {
         -ms-order: 1;
         width: 100%;
 	}
+  .hr-hidden { visibility: hidden;}
+  
 }
 
 @media (min-width: 767px) and (max-width: 980px) {
