@@ -16,24 +16,32 @@
 <div class="topnav">
                 <!-- logo -->
                 <div class="logo">
-            <a href="index.html" style="padding: 0; margin: 0;"><img src="img/JH-logo.png" alt="Jen Howard"></a>
+            <a href="index.html" style="padding: 0; margin: 0;"><img class="sml" src="img/JH-logo.png" alt="Jen Howard"></a>
                 </div>
                 <!-- logo -->
 
 <!-- header -->
-<nav class="topnav-right">
-  <a href="index.html">Work</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<div id="myNavtoggle" class="navtoggle">
+  <nav>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></il>
+    </ul>
+  </nav>
 </div>
+
 <main>
-  <div id="about">
-    <div  class="col-sm-12">
+  <div id="about"> <!-- open hero section -->
+    <div class="col-sm-12 center">
       <div><!--o pen first column (image) -->
             <img class="img-responsive" src="img/JH-main-sml.png" alt="view-with-a-jen">
+      </div ><!-- close first column -->
+    </div>
+  </div>
       </div><!-- close first column -->
-      <h1>Jen Howard</h1>
+      <h1 class="title-details">Jen Howard</h1>
         <div class="details">
         <p class="quote">Making the world better through UX.</p>
             <p>I'm a UX/UI designer that has taken the reigns of a complex, data-mapping application that lacked visual cohesion and interactive consistency and managed to unify our developers' opposing ideas on icons into a single, cohesive brand pattern. On top of that, I paved the way for A/B Testing, managed constant layout design changes, streamlined task flow, and pushed as many quality of life suggestions as possible.</p>
@@ -89,6 +97,10 @@
   </div>
 </footer>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

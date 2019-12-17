@@ -16,21 +16,26 @@
 <div class="topnav">
                 <!-- logo -->
                 <div class="logo">
-            <a href="index.html" style="padding: 0; margin: 0;"><img src="img/JH-logo.png" alt="Jen Howard"></a>
+            <a href="index.html" style="padding: 0; margin: 0;"><img class="sml" src="img/JH-logo.png" alt="Jen Howard"></a>
                 </div>
                 <!-- logo -->
 
 <!-- header -->
-<nav class="topnav-right">
-  <a href="index.html">Work</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<div id="myNavtoggle" class="navtoggle">
+  <nav>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></il>
+    </ul>
+  </nav>
 </div>
+
 <main>
   <div id="contact-page">
     <div style="padding-bottom: 10px;">
-      <div class="col-sm-6 col-md-6 col-lg-6"><!--o pen first column (image) -->
+      <div class="col-sm-6 col-md-6 col-lg-6 center"><!--o pen first column (image) -->
             <img class="img-responsive" src="img/JH-main-sml.png" alt="view-with-a-jen">
       </div><!-- close first column -->
       <div class="col-sm-6 col-md-6 col-lg-6">
@@ -90,6 +95,10 @@
   </div>
 </footer>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

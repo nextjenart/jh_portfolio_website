@@ -10,29 +10,36 @@
     <script src="https://kit.fontawesome.com/7a659e7dc9.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="js-focus-visible">
+<body>
 <!-- Content Area -->
 <!-- header -->
-<div class="topnav topnav-lg">
+<div>
 	 <!-- logo -->
-				<div class="logo">
+				<div class="logo sml">
             <a href="index.html" style="padding: 0; margin: 0;"><img src="img/JH-logo.png" alt="Jen Howard"></a>
 				</div>
 <!-- logo -->
 
 <!-- header -->
-<nav class="topnav-right">
-  <a href="index.html">Work</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<div id="myNavtoggle" class="navtoggle">
+  <nav>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></il>
+    </ul>
+  </nav>
 </div>
+
 <main>
   <div id="hero"> <!-- open hero section -->
-    <div>
-      <div class="center"><!--o pen first column (image) -->
+    <div class="col-sm-12 center">
+      <div><!--o pen first column (image) -->
             <img class="img-responsive" src="img/JH-main-sml.png" alt="view-with-a-jen">
       </div ><!-- close first column -->
+    </div>
+  </div>
       
       <div class="center">
         <div class="details">
@@ -270,6 +277,10 @@
   </div>
 </footer>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

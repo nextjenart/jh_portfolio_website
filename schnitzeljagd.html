@@ -16,22 +16,26 @@
 <div class="topnav">
                 <!-- logo -->
                 <div class="logo">
-            <a href="index.html" style="padding: 0; margin: 0;"><img src="img/JH-logo.png" alt="Jen Howard"></a>
+            <a href="index.html" style="padding: 0; margin: 0;"><img class="sml" src="img/JH-logo.png" alt="Jen Howard"></a>
                 </div>
                 <!-- logo -->
 
 <!-- header -->
-<nav class="topnav-right">
-  <a href="index.html">Work</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<div class="navtoggle" id="myNavtoggle">
+  <nav>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></il>
+    </ul>
+  </nav>
 </div>
 <main>
 <!--o pen first column (image) -->
       <!-- content -->
 <div id="schnitzeljagd">
-        <div id="schnitzeljagd-top" class="col-sm-12">
+        <div id="schnitzeljagd-top" class="col-sm-12 center">
             <img class="img-responsive" src="img/Schnitzeljagd-title.png" alt="">
         </div> 
     <div class="col-md-6">
@@ -183,6 +187,10 @@
   </div>
 </footer>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>

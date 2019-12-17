@@ -1,29 +1,60 @@
 /* This is my CSS main */
 
-.topnav {
+/*.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+  padding-right: 10px;
+  right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+} */
+
+nav {
 	overflow: hidden;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
 
-.topnav a {
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li , a {
 	float: right;
-	color: #000;
+	list-style-type: none;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  color: #000;
 	text-align: center;
-	padding: 6px 8px;
-	margin-right: 20px;
-	margin-top: 20px;
 	text-decoration: none;
 	font-size: 14px;
   transition: .3s;
 }
 
-.topnav a:hover {
+nav > ul > li { display: inline-block; }
+
+a:hover {
 	color: #000;
   opacity: 0.3;
 }
 
-.topnav a:visited {
+a:visited {
 	color: #A9A9A9;
 }
 
@@ -36,6 +67,7 @@
 main {
 	margin-right: 20px;
 	margin-left: 20px;
+  padding-top: 80px;
 }
 
 h1 {
@@ -133,6 +165,11 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+}
+
+.btn:visited {
+  color: #fff;
+  opacity: 0.8;
 }
 
 .btn {
@@ -686,8 +723,53 @@ fieldset {
 
 /* Responsive Design */
  
-@media screen and (max-width: 766px) {
-	.row2 {
+
+/*@media screen and (max-width: 641px) {
+  .sml { max-width: 150px; }
+
+  .navtoggle li:not(:last-child) {
+  display: none;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
+} */
+
+@media only screen and (max-width: 641px) {
+	 .sml { max-width: 150px; }
+
+  .navtoggle li:not(:last-child) { display: none; }
+
+  .navtoggle.responsive li {
+    display: block;
+  }
+
+  .navtoggle,
+  .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+    border-bottom: 1px solid #1CBBA3;
+  }
+
+  .navtoggle li .icon {
+    padding-right: 10px;
+    right: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+
+  nav > ul { margin: 1em 0; }
+
+  .row2 {
 		display: -webkit-box;   
         display: -moz-box;      
         display: -ms-flexbox;   
@@ -715,14 +797,15 @@ fieldset {
         width: 100%;
 	}
   .hr-hidden { visibility: hidden;}
-  
+
 }
 
-@media (min-width: 767px) and (max-width: 980px) {
+@media (min-width: 642px) and (max-width: 980px) {
 	.col-md-6 { width:100%; }
 	.oi_sidebar { display:none; }
 	.col-md-4.hidden-sm { height:0px !important; margin:0px !important; display:none !important; visibility:hidden !important;}
 	.oi_blocks_post .oi_post_holder { height:360px; }
+  .navtoggle li:last-child { display: none; }
 }
 
 @media (min-width: 981px) and (max-width: 1440px) {
@@ -731,7 +814,8 @@ fieldset {
   		max-width: 1200px;
   		margin-left: auto;
   		margin-right: auto;
-	}
+    }
+  .navtoggle li:last-child { display: none; }
 }
 
 .img-responsive,
